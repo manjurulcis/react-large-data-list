@@ -93,7 +93,7 @@ const App = () => {
     <div style={{ maxWidth: "100%" }}>
       {
         <MaterialTable
-          title="Large Data List Example"
+          title="Large Data Set Example"
           isLoading={loading}
           editable={tableEditableConfig}
           columns={columns}

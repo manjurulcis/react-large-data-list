@@ -31,3 +31,11 @@ th.MuiTableCell-root .MuiSvgIcon-root {
   color: rgba(255, 255, 255, 0.54) !important;
   opacity: 1;
 }
+
+.MuiTypography-h6 {
+  font-size: 2rem !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}

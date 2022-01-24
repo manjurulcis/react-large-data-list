@@ -13,7 +13,7 @@ describe("App.js", () => {
     await page.goto("http://localhost:5000");
     await page.waitForSelector(".MuiTypography-h6");
     const text = await page.$eval(".MuiTypography-h6", (e) => e.textContent);
-    expect(text).toContain("Large Data List Example");
+    expect(text).toContain("Large Data Set Example");
   });
 
   afterAll(() => browser.close());
