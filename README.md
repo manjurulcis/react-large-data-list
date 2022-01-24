@@ -37,3 +37,6 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Improvement
+To improve the performance we can use react window in which cases we need to write a custom component with other related functionalities. 
