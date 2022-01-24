@@ -64,7 +64,7 @@ const App = () => {
   const detailPanelConfig = [
     {
       icon: "account_circle",
-      tooltip: "Show Surname",
+      tooltip: "Show Bio",
       render: (rowData) => {
         return (
           <div
