@@ -48,7 +48,7 @@ const App = () => {
   const tableOptions = {
     pageSizeOptions: [100, 200, 500, 1000, 2000, 5000],
     pageSize: 100,
-    maxBodyHeight: 700,
+    maxBodyHeight: 800,
     selection: true,
     loading: true,
     loadType: "overlay",

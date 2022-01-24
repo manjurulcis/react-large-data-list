@@ -9,7 +9,7 @@ describe("App.js", () => {
     page = await browser.newPage();
   });
 
-  it("contains the welcome text", async () => {
+  it("contains large dataset example text", async () => {
     await page.goto("http://localhost:5000");
     await page.waitForSelector(".MuiTypography-h6");
     const text = await page.$eval(".MuiTypography-h6", (e) => e.textContent);
