@@ -19,6 +19,7 @@ router.get("/list", function (req, res) {
   const data = [];
   for (var i = 0; i < 10000; i++) {
     var user = {
+      id: i + 1, 
       name: faker.name.findName(),
       email: faker.internet.email(),
       address: faker.address.streetAddress(),

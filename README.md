@@ -7,6 +7,8 @@ cd ..
 yarn install
 yarn start
 ```
+
+or alternatively if you running first time you can run the `sh start.sh` command 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

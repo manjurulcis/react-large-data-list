@@ -10,6 +10,7 @@
     "axios": "0.19.2",
     "material-table": "^1.69.3",
     "react": "^16.13.1",
+    "react-base-table": "^1.13.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
