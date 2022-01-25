@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MaterialTable from "material-table";
 import "./styles.css";
-import BaseTable, { Column } from "react-base-table";
-import "react-base-table/styles.css";
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -14,7 +12,7 @@ const App = () => {
       field: "name",
       render: (rowData) => rowData.id + ". " + rowData.name,
       customFilterAndSearch: (term, rowData) =>
-        rowData.name.indexOf(term) >= 0 || rowData.id == term,
+        rowData.name.includes(term) || rowData.id.toString().includes(term),
     },
     { title: "Email Address", field: "email" },
     { title: "Address", field: "address" },
@@ -46,8 +44,8 @@ const App = () => {
   };
 
   const tableOptions = {
-    pageSizeOptions: [100, 200, 500, 1000, 2000, 5000],
-    pageSize: 100,
+    pageSizeOptions: [10, 20, 50, 100, 200, 500, 1000, 2000, 5000],
+    pageSize: 10,
     maxBodyHeight: 800,
     selection: true,
     loading: true,
