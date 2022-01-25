@@ -14,8 +14,8 @@ const rootElement = document.getElementById('root');
 ReactDOM.render(<BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="react-window" element={<MaterialExample />} />
-        <Route path="material-table" element={<WindowExample />} />
+        <Route path="material-table" element={<MaterialExample />} />
+        <Route path="react-window" element={<WindowExample />} />
         <Route
           path="*"
           element={

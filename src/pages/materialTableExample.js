@@ -45,8 +45,8 @@ const MaterialExample = (props) => {
   };
 
   const tableOptions = {
-    pageSizeOptions: [50, 100, 200, 500, 1000, 2000, 5000],
-    pageSize: 25,
+    pageSizeOptions: [10, 20, 50, 100, 200, 500, 1000, 2000, 5000],
+    pageSize: 10,
     maxBodyHeight: 800,
     selection: true,
     loading: true,

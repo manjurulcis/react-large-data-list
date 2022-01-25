@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import BaseTable, { Column, SortOrder } from "react-base-table";
-import "react-base-table/styles.css";
 import { FixedSizeList as List } from "react-window";
 const WindowExample = (props) => {
-  const defaultSort = {
-    name: SortOrder.ASC,
-    email: SortOrder.ASC,
-    address: SortOrder.ASC,
-  };
-
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -29,7 +21,7 @@ const WindowExample = (props) => {
   const Row = ({ index, style }) => {
     return (
       <div className={index % 2 ? "ListItemOdd" : "ListItemEven"} style={style}>
-        <p>{searchItem == "" ? users[index].name : filteredData[index].name}</p>
+        <p>{searchItem === "" ? users[index].name : filteredData[index].name}</p>
       </div>
     );
   };
@@ -55,7 +47,7 @@ const WindowExample = (props) => {
         className="List"
         height={530}
         itemCount={searchItem == "" ? users.length : filteredData.length}
-        itemSize={35}
+        itemSize={25}
         width={500}
       >
         {Row}
